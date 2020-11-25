@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <title>HTML Academy: Кэт энерджи: форма</title>
+   </head>
+   <body>
+     <header class="main-header">
+        <div class="main-header__logo">
+           <a href="index.html"><img src="https://via.placeholder.com/150x150" alt="Лого"></a>
+        </div>
+        <nav class="main-header__menu">
+        </nav>
+     </header>
+      <main>
+         <section class="question-form">
+            <h1 class="question-form__header">Подбор программы</h1>
+            <p>заполните анкету и мы подберем программу питания для вашего кота</p>
+            <form class="program-selection" action="https://echo.htmlacademy.ru/courses" method="post">
+               <fieldset class="naming">
+                  <label for="naming__cat-name">имя:*</label>
+                  <input type="naming__text" class="cat-name" id="cat-name" value="барсик">
+                  <label for="naming__cat-weight">вес(кг):*</label>
+                  <input type="naming__number" class="cat-weight" id="cat-weight" value="7">
+                  <label for="naming__cat-age">возраст(лет):</label>
+                  <input type="naming__number" class="cat-age" id="cat-age" value="7">
+               </fieldset>
+               <fieldset class="type">
+                  <p><input class="type__slim" type="radio" name="slim" value="slim">похудение</p>
+                  <p><input class="type__pro" type="radio" name="pro" value="pro">набор массы</p>
+                  <p><input class="type__need-help" type="radio" name="need-help" value="need-help">не знаю (нужен ваш совет)</p>
+               </fieldset>
+               <fieldset class="cat-contacts">
+                  <h2>Контактные данные (владельца кота)</h2>
+                  <label for="email">e-mail:*</label>
+                  <input type="email" class="cat-contacts__email" name="email" id="email" value="kuklachev@gmail.com">
+                  <label for="phone">телефон:*</label>
+                  <input type="tel" class="cat-contacts__phone" name="phone" id="phone" value="8 (960) 900-60-90">
+               </fieldset>
+               <fieldset class="cat-habits">
+                  <legend class="cat-habits__header">Комментарий</legend>
+                  <textarea name="cat-habits__cat-comment" rows="8" cols="80">расскажите обо всех повадках кота</textarea>
+               </fieldset>
+               <fieldset class="plus-functions">
+                  <label class="plus-functions__labels" for="check1">сахарозаменитель</label>
+                  <input class="plus-functions__checkboxes" type="checkbox" name="chek1" id="check1" value="c1">
+                  <label class="plus-functions__labels" for="check2">питьевая вода</label>
+                  <input class="plus-functions__checkboxes" type="checkbox" name="chek2" id="check2" value="c2">
+                  <label class="plus-functions__labels" for="check3">молоко</label>
+                  <input class="plus-functions__checkboxes" type="checkbox" name="chek3" id="check3" value="c3">
+                  <label class="plus-functions__labels" for="check4">витамины</label>
+                  <input class="plus-functions__checkboxes" type="checkbox" name="chek4" id="check4" value="c4">
+               </fieldset>
+               <button class="program-selection__submit" type="submit" class="send-request" name="request" value="отправить заявку"></button>
+               <span class="program-selection__clarification">* - обязательные поля</span>
+            </form>
+         </section>
+      </main>
+      <footer class="main-footer">
+         <div class="main-footer__logo">
+          <a class="logo__image" href="index.html"><img src="https://via.placeholder.com/150x150" alt="Лого2"></a>
+        </div>
+         <div class="social">
+           <ul class="social__list">
+             <li class="social__list-item"><a href="#"><img src="https://via.placeholder.com/150x150" alt="вк"></a></li>
+             <li class="social__list-item"><a href="#"><img src="https://via.placeholder.com/150x150" alt="insta"></a></li>
+             <li class="social__list-item"><a href="#"><img src="https://via.placeholder.com/150x150" alt="fb"></a></li>
+           </ul>
+         </div>
+         <div class="academy">
+            <span>HTML Academy</span>
+            <a class="academy__logo" href="https://htmlacademy.ru/intensive/adaptive"><img src="https://via.placeholder.com/150x150" alt="academy-logo"></a>
+         </div>
+      </footer>
+   </body>
+</html>
