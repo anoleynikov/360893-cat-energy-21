@@ -1,7 +1,16 @@
 .academy{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+
   &__logo{
     width: 27px;
     height: 34px;
+  }
+
+  &__logo path{
+    fill: var(--special-grey-3);
   }
   &__text{
     color: var(--special-dark-grey);
@@ -11,4 +20,19 @@
     font-size: 16px;
     line-height: 18px;
   }
+
+    &__text{
+      padding-right: 136px;
+    }
+}
+
+
+
+@media (min-width: @tablet-width) {
+  .academy{
+    margin: 0;
+  &__text{
+    padding-right: 22px;
+  }
+}
 }

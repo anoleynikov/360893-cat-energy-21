@@ -14,11 +14,43 @@
   --oswald-font: Oswald, Arial, sans-serif;
   --arial-font: Arial;
 }
+
+
 body{
-  width: 320px;
   font-family: var(--oswald-font);
   font-style: normal;
   font-weight: normal;
   margin: 0 auto;
   padding: 0;
+  min-width: 320px;
+  width: 100%;
+}
+
+fieldset{
+  border: 0 none;
+}
+
+h2{
+  margin: 0;
+}
+
+@media (min-width: @tablet-width) {
+
+}
+
+@media (min-width: @desktop-width) {
+
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

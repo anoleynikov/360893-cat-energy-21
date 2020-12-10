@@ -1,51 +1,84 @@
 .additional{
-  &__main-header{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 24px;
-    text-align: center;
-  }
-
   &__header{
-    color: var(--special-dark-grey-2);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 16px;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  &__value{
-    color: var(--special-dark-grey);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-    text-align: center;
-  }
-
-  &__quantity{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 14px;
-    text-align: right;
-  }
-
-  &__button{
     font-family: var(--oswald-font);
-    width: 280px;
-    height: 40px;
-    color: var(--basic-white);
-    background-color: var(--basic-green);
-    text-align: center;
-    text-transform: uppercase;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    border: none;
+    margin-top: 0;
+    text-align: left;
+    margin-bottom: 80px;
+    padding-left: 67px;
   }
+  &__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 280px;
+    padding: 0 20px;
+  }
+  &__header{
+      font-size: 24px;
+      line-height: 24px;
+      padding-left: 21px;
+      margin-top: 50px;
+      margin-bottom: 35px;
+    }
+}
+
+
+
+@media (min-width: @tablet-width) {
+  .additional{
+    margin-bottom: 70px;
+    &__header{
+      font-size: 36px;
+      line-height: 36px;
+    }
+    &__wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+      width: 700px;
+      padding: 0 20px;
+    }
+  }
+
+}
+@media (min-width: @tablet-width) {
+  .additional{
+    margin-bottom: 70px;
+    &__header{
+      font-size: 36px;
+      line-height: 36px;
+    }
+    &__wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+      width: 700px;
+      padding: 0 20px;
+    }
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+  .additional{
+    margin-bottom: 70px;
+    &__header{
+      font-size: 36px;
+      line-height: 36px;
+    }
+    &__wrapper{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 auto;
+      width: 1200px;
+      padding: 0 20px;
+    }
+  }
+
 }

@@ -1,20 +1,31 @@
-.social{
-  &__list{
-    list-style: none;
-  }
+.social__list{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
 
-  &__vk{
-    width: 23px;
-    height: 16px;
-  }
+.social__vk{
+  width: 23px;
+  height: 16px;
+}
 
-  &__insta{
-    width: 16px;
-    height: 16px;
-  }
+.social__insta{
+  width: 16px;
+  height: 16px;
+}
 
-  &__fb{
-    width: 22px;
-    height: 22px;
+.social__fb{
+  width: 22px;
+  height: 22px;
+}
+
+ .social__list-item{
+   margin-right: 35px;
+ }
+
+@media (min-width: @tablet-width) {
+  .social__list-item{
+    margin-right: 20px;
   }
 }
