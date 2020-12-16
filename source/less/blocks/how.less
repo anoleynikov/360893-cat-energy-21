@@ -1,11 +1,9 @@
-.how{
+.how {
   display: flex;
   flex-direction: column;
-  &__header{
+
+  &__header {
     font-family: var(--oswald-font);
-    font-size: 60px;
-    line-height: 60px;
-    text-align: left;
     margin: 0;
     margin-bottom: 38px;
     font-size: 36px;
@@ -13,19 +11,22 @@
     text-align: center;
     margin-right: 20px;
   }
-  &__text{
+
+  &__text {
     margin: 0;
     font-family: var(--arial-font);
     align-self: baseline;
     font-size: 14px;
     line-height: 18px;
   }
-  &__wrapper{
+
+  &__wrapper {
     margin: 0 auto;
     width: 280px;
     padding: 0 20px;
   }
-  &__image-wrap{
+
+  &__image-wrap {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,73 +36,73 @@
     width: 60px;
     height: 60px;
   }
-  &__advantages{
+
+  &__advantages {
     display: flex;
     flex-direction: row;
-    }
+  }
 }
 
 @media (min-width: @tablet-width) {
-  .how{
+  .how {
     padding-left: 30px;
     padding-right: 30px;
     flex-direction: row;
     flex-wrap: wrap;
 
-    &__advantages{
+    &__advantages {
       height: 280px;
       width: 230px;
       flex-direction: column;
     }
-    &__image-wrap{
+
+    &__image-wrap {
+      width: 80px;
+      height: 80px;
       margin-bottom: 31px;
     }
-    &__header{
+
+    &__header {
       margin-left: 30px;
       font-size: 60px;
       line-height: 60px;
       margin-bottom: 32px;
       text-align: left;
     }
-    &__text{
+
+    &__text {
       font-size: 16px;
       line-height: 24px;
     }
-    &__image-wrap{
-      width: 80px;
-      height: 80px;
-    }
-    &__wrapper{
+
+    &__wrapper {
       margin: 0 auto;
       width: 680px;
       padding: 0 20px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-
     }
   }
-
 }
 
-
 @media (min-width: @desktop-width) {
-  .how{
-    &__header{
+  .how {
+    &__header {
       margin-left: 112px;
       margin-bottom: 32px;
       font-size: 60px;
       line-height: 60px;
       text-align: left;
     }
-    &__wrapper{
+
+    &__wrapper {
       margin: 0 auto;
       width: 1200px;
       padding: 0 20px;
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-    }  
+    }
   }
-
 }

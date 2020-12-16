@@ -1,98 +1,96 @@
-.example{
+.example {
   background-color: var(--basic-grey-2);
 
-  &__header{
+  &__header {
     text-align: left;
     margin: 0;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 40px;
   }
 
-  &__text{
+  &__text {
     font-family: var(--arial-font);
     font-size: 14px;
     line-height: 18px;
   }
-  &__name{
+
+  &__name {
     font-family: var(--arial-font);
+    font-size: 12px;
+    line-height: 12px;
   }
-  &__button{
-    border: none;
-    text-transform: uppercase;
-  }
-  &__wrapper{
+
+  &__wrapper {
     margin: 0 auto;
     width: 280px;
     padding: 20px 20px;
   }
-    &__header{
-      margin-left: 20px;
-      margin-bottom: 30px;
-      font-size: 36px;
-      line-height: 40px;
-    }
-    &__text{
-      font-size: 14px;
-      line-height: 18px;
-    }
-    &__expenses{
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 14px;
-      line-height: 20px;
-    }
-    &__value{
-      font-size: 24px;
-      line-height: 24px;
-    }
-    &__name{
-      font-size: 12px;
-      line-height: 12px;
-    }
-    &__button{
-      font-size: 16px;
-      line-height: 20px;
-    }
-    &__img{
-      display: block;
-      margin: 0 auto;
-    }
+
+  &__expenses {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__value {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  &__button {
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    text-transform: uppercase;
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
-
 @media (min-width: @tablet-width) {
-  .example{
+  .example {
     background-color: var(--basic-white);
-    &__wrapper{
+
+    &__wrapper {
       margin: 0 auto;
       width: 700px;
       padding: 0 30px;
     }
-    &__header{
+
+    &__header {
       margin-left: 30px;
       margin-bottom: 63px;
       font-size: 60px;
       line-height: 60px;
     }
-    &__text{
+
+    &__text {
       font-size: 16px;
       line-height: 24px;
     }
   }
-
 }
 
-@media (min-width: @desktop-width){
-  .example{
+@media (min-width: @desktop-width) {
+  .example {
     background-color: var(--basic-grey);
-    &__wrapper{
+
+    &__wrapper {
       margin: 0 auto;
       width: 1200px;
       padding: 0 15px;
     }
-    &__header{
+
+    &__header {
       margin-bottom: 63px;
       font-size: 60px;
       line-height: 60px;
     }
   }
-
 }

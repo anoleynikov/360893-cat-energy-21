@@ -1,76 +1,72 @@
-.cat-gift{
+.cat-gift {
+  background: url("../img/gift-photo-mobile@1x.jpg") center no-repeat;
 
-    background: url(../img/gift-photo-mobile@1x.jpg) center no-repeat;
-    .&__image{
-      fill: var(--basic-white);
-      width: 56px;
-      height: 61px;
-      margin-top: 60px;
-      margin-bottom: 45px;
-    }
-
-    &__text{
-      color: var(--basic-white);
-      font-family: var(--arial-font);
-      font-style: normal;
-      font-weight: normal;
-      text-align: center;
-      padding: 0 20px;
-      font-size: 16px;
-      line-height: 20px;
-      margin-bottom: 43px;
-    }
-    &__wrapper{
-        display: flex;
-        height: 289px;
-        padding-left: 20px;
-        padding-right: 20px;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 30px;
-    }
-
-
+  .&__image {
+    fill: var(--basic-white);
+    width: 56px;
+    height: 61px;
+    margin-top: 60px;
+    margin-bottom: 45px;
   }
 
+  &__text {
+    color: var(--basic-white);
+    font-family: var(--arial-font);
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 43px;
+  }
 
+  &__wrapper {
+    display: flex;
+    height: 289px;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}
 
 @media (min-width: @tablet-width) {
-  .cat-gift{
+  .cat-gift {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background: url(../img/gift-photo-tablet@1x.jpg) center no-repeat;
+    background: url("../img/gift-photo-tablet@1x.jpg") center no-repeat;
     margin-bottom: 75px;
 
-    &__image{
+    &__image {
       width: 57px;
       height: 62px;
     }
-    &__wrapper{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        display: flex;
-        height: 200px;
-        width: 700px;
-        padding-left: 20px;
-        padding-right: 20px;
 
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      height: 200px;
+      width: 700px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
-    &__text{
-        font-size: 16px;
-        line-height: 20px;
-        margin-bottom: 0;
+
+    &__text {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 0;
     }
   }
-
 }
 
 @media (min-width: @desktop-width) {
-  .cat-gift{
+  .cat-gift {
     display: none;
   }
 }

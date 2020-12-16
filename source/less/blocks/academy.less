@@ -1,38 +1,35 @@
-.academy{
+.academy {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 0 auto;
 
-  &__logo{
+  &__logo {
     width: 27px;
     height: 34px;
   }
 
-  &__logo path{
+  &__logo path {
     fill: var(--special-grey-3);
   }
-  &__text{
+
+  &__text {
     color: var(--special-dark-grey);
-    font-family: Arial;
+    font-family: "arial, serif";
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 18px;
+    padding-right: 136px;
   }
-
-    &__text{
-      padding-right: 136px;
-    }
 }
-
-
 
 @media (min-width: @tablet-width) {
-  .academy{
+  .academy {
     margin: 0;
-  &__text{
-    padding-right: 22px;
+
+    &__text {
+      padding-right: 22px;
+    }
   }
-}
 }

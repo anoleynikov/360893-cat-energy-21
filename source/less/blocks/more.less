@@ -1,12 +1,14 @@
-.more{
-  &__header{
+.more {
+  &__header {
     font-style: normal;
     font-weight: normal;
     text-align: center;
     text-transform: uppercase;
+    font-size: 16px;
+    line-height: 20px;
   }
 
-  &__wrapper{
+  &__wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,11 +17,7 @@
     padding: 0 20px;
   }
 
-  &__icon{
-    fill: var(--basic-grey);
-  }
-
-  &__button{
+  &__button {
     padding: 21px 94px;
     background-color: var(--basic-grey);
     font-style: normal;
@@ -32,54 +30,46 @@
     text-decoration: none;
   }
 
-  &__text{
+  &__text {
     font-family: var(--arial-font);
     font-style: normal;
     font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
   }
 
-    &__icon{
-      width: 30px;
-      height: 30px;
-      margin-bottom: 15px;
-    }
-    &__header{
-      font-size: 16px;
-      line-height: 20px;
-    }
-    &__text{
-      font-size: 12px;
-      line-height: 16px;
-    }
-
+  &__icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 15px;
+    fill: var(--basic-grey);
+  }
 }
 
-
-
 @media (min-width: @tablet-width) {
-  .more{
-    &__icon{
+  .more {
+    &__icon {
       width: 60px;
       height: 60px;
       margin-bottom: 45px;
     }
 
-
-    &__wrapper{
+    &__wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 0 20px;
       padding-top: 52px;
     }
-    &__header{
+
+    &__header {
       font-size: 20px;
       line-height: 22px;
     }
-    &__text{
+
+    &__text {
       font-size: 16px;
       line-height: 18px;
     }
   }
-
 }
